@@ -1,0 +1,80 @@
+      .title {
+        text-align: center;
+        margin-top: 35px;
+      }
+
+      .content {
+        float: left;
+        margin-top: 30px;
+      }
+
+      .beef,
+      .chicken,
+      .sushi {
+        background-color: gray;
+        width: 30%;
+        float: left;
+        margin: 10px 20px;
+        border: 1px solid black;
+
+        box-sizing: border-box;
+        /* padding: 5px 10px; */
+        position: relative;
+      }
+      p {
+        margin: 15px 10px;
+      }
+
+      .beef-square,
+      .chicken-square,
+      .sushi-square {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: center;
+        width: 35%;
+        height: 25px;
+        border: 1px solid black;
+      }
+      .beef-square {
+        background-color: red;
+        color: white;
+      }
+      .chicken-square {
+        background-color: palevioletred;
+      }
+      .sushi-square {
+        background-color: wheat;
+      }
+
+      @media (max-width: 1216px) {
+      }
+      @media (max-width: 1215px) and (min-width: 833px) {
+       
+        .sushi {
+          width: 94%;
+
+          height: 100px;
+        }
+        .beef,
+        .chicken {
+          width: 45%;
+          box-sizing: border-box;
+        }
+        .sushi-square {
+          width: 170px;
+        }
+      }
+
+      @media (max-width: 832px) {
+        .beef,
+        .chicken,
+        .sushi {
+          width: 94%;
+        }
+        .beef-square,
+        .chicken-square,
+        .sushi-square {
+          width: 120px;
+        }
+      }
